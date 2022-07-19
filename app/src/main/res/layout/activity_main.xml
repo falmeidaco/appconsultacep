@@ -39,7 +39,8 @@
     android:layout_marginEnd="20dp"
     android:autofillHints="AUTOFILL_HINT_POSTAL_CODE"
     android:ems="10"
-    android:inputType="textPersonName"
+    android:imeOptions="actionSearch"
+    android:inputType="number"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/textview_label_cep" />
@@ -60,13 +61,17 @@
     android:id="@+id/textview_result"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
     android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    android:textAlignment="center"
+    android:textSize="24sp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/button_consult" />
 
   <ProgressBar
-    android:id="@+id/progressBar"
+    android:id="@+id/ui_progressbar"
     style="?android:attr/progressBarStyle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -75,5 +80,16 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/textview_result" />
+
+  <ImageView
+    android:id="@+id/ui_icon_success"
+    android:layout_width="152dp"
+    android:layout_height="152dp"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textview_result"
+    app:srcCompat="@drawable/ic_baseline_check_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
