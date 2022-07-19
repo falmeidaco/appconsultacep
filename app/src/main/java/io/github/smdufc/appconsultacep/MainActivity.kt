@@ -60,7 +60,6 @@ class MainActivity : AppCompatActivity() {
       }
       false
     }
-
   }
 
   /* Metodo para consultar CEP */
@@ -92,15 +91,8 @@ class MainActivity : AppCompatActivity() {
           val ddd = response.getString("ddd")
           val siafi = response.getString("siafi")
           uiIconSuccess.visibility = ImageView.VISIBLE
-          textViewResult.text = "CEP: $cep\n" +
-                  "Logradouro: $logradouro\n" +
-                  "Bairro: $bairro\n" +
-                  "Localidade: $localidade\n" +
-                  "UF: $uf\n" +
-                  "IBGE: $ibge\n" +
-                  "GIA: $gia\n" +
-                  "DDD: $ddd\n" +
-                  "SIAF: $siafi"
+          textViewResult.text =
+            "CEP: $cep\nLogradouro: $logradouro\nBairro: $bairro\nLocalidade: $localidade\nUF: $uf\nIBGE: $ibge\nGIA: $gia\nDDD: $ddd\nSIAF: $siafi"
         }
         // Define UI com estado de processo concluído
         setUIState(true)
