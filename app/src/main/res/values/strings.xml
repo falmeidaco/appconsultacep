@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">App ConsultaCEP</string>
+    <string name="app_name">Consulta CEP</string>
     <string name="app_title">Consultar CEP</string>
     <string name="label_input_cep">Informe o CEP abaixo</string>
     <string name="hint_input_cep">60150120</string>
