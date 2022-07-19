@@ -32,11 +32,11 @@
 
   <EditText
     android:id="@+id/input_cep"
-    android:layout_width="330dp"
+    android:layout_width="0dp"
     android:layout_height="49dp"
-    android:layout_marginStart="20dp"
+    android:layout_marginStart="30dp"
     android:layout_marginTop="10dp"
-    android:layout_marginEnd="20dp"
+    android:layout_marginEnd="30dp"
     android:autofillHints="AUTOFILL_HINT_POSTAL_CODE"
     android:ems="10"
     android:imeOptions="actionSearch"
@@ -47,11 +47,11 @@
 
   <Button
     android:id="@+id/button_consult"
-    android:layout_width="328dp"
+    android:layout_width="0dp"
     android:layout_height="48dp"
-    android:layout_marginStart="20dp"
+    android:layout_marginStart="30dp"
     android:layout_marginTop="20dp"
-    android:layout_marginEnd="20dp"
+    android:layout_marginEnd="30dp"
     android:text="@string/button_consult"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
@@ -59,13 +59,13 @@
 
   <TextView
     android:id="@+id/textview_result"
-    android:layout_width="wrap_content"
+    android:layout_width="0dp"
     android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
+    android:layout_marginStart="30dp"
     android:layout_marginTop="20dp"
-    android:layout_marginEnd="20dp"
-    android:textAlignment="center"
-    android:textSize="24sp"
+    android:layout_marginEnd="30dp"
+    android:textAlignment="textStart"
+    android:textSize="20sp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/button_consult" />
@@ -85,11 +85,36 @@
     android:id="@+id/ui_icon_success"
     android:layout_width="152dp"
     android:layout_height="152dp"
+    android:contentDescription="Sucesso"
     android:visibility="invisible"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/textview_result"
     app:srcCompat="@drawable/ic_baseline_check_24" />
+
+  <ImageView
+    android:id="@+id/ui_icon_error"
+    android:layout_width="152dp"
+    android:layout_height="151dp"
+    android:contentDescription="Erro ao consultar"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textview_result"
+    app:srcCompat="@drawable/ic_error" />
+
+  <ImageView
+    android:id="@+id/ui_icon_notfound"
+    android:layout_width="152dp"
+    android:layout_height="152dp"
+    android:contentDescription="Não encontrado."
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textview_result"
+    app:srcCompat="@drawable/ic_not_found" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
