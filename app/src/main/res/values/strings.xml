@@ -2,8 +2,12 @@
     <string name="app_name">App ConsultaCEP</string>
     <string name="app_title">Consultar CEP</string>
     <string name="label_input_cep">Informe o CEP abaixo</string>
+    <string name="hint_input_cep">60150120</string>
     <string name="button_consult">Consultar</string>
     <string name="error_request">Erro ao consultar ou CEP inválido.</string>
     <string name="error_not_found">CEP não encontrado.</string>
     <string name="error_empty">Por favor, informe um CEP.</string>
+    <string name="description_sucess">Imagem de sucesso</string>
+    <string name="description_notfound">Imagem de não encontrado</string>
+    <string name="description_error">Imagem de erro</string>
 </resources>
